@@ -41,6 +41,10 @@ This solution implements an end‑to‑end pipeline that converts CGM time‑ser
    - FastAPI service exposing a single prediction endpoint
    - Stateless design for simplicity and ease of testing
 
+5. **Training Pipeline (`train_model.py`)**
+  - The training script handles the full machine learning lifecycle. 
+  - It parses clinical XML, performs feature engineering, handles class imbalance, and evaluates performance using a time-aware split.
+
 ---
 
 ## 3. Modeling Approach
