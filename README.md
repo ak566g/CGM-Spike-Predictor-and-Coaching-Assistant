@@ -109,10 +109,94 @@ This solution implements an end‑to‑end pipeline that converts CGM time‑ser
   "recent_data": [
     {
       "user_id": "USR_001",
-      "timestamp": "2023-10-01 08:00:00",
-      "glucose": 100,
-      "carbs": 65,
-      "meal_type": "Breakfast"
+      "timestamp": "2023-10-01 12:00:00",
+      "glucose": 110,
+      "carbs": 50,
+      "meal_type": "Lunch (Brown Rice)"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:05:00",
+      "glucose": 112,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:10:00",
+      "glucose": 114,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:15:00",
+      "glucose": 117,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:20:00",
+      "glucose": 120,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:25:00",
+      "glucose": 124,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:30:00",
+      "glucose": 128,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:35:00",
+      "glucose": 133,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:40:00",
+      "glucose": 138,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:45:00",
+      "glucose": 144,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:50:00",
+      "glucose": 150,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 12:55:00",
+      "glucose": 157,
+      "carbs": 0,
+      "meal_type": "N/A"
+    },
+    {
+      "user_id": "USR_001",
+      "timestamp": "2023-10-01 13:00:00",
+      "glucose": 165,
+      "carbs": 0,
+      "meal_type": "N/A"
     }
   ]
 }
@@ -122,9 +206,10 @@ This solution implements an end‑to‑end pipeline that converts CGM time‑ser
 
 ```json
 {
-  "will_spike": true,
-  "risk_score": 0.78,
-  "explanation": "Risk is high due to recent high carbohydrate intake combined with a sustained upward glucose trend."
+  "user_id": "USR_001",
+  "will_spike": false,
+  "risk_score": 0.48,
+  "explanation": "Lunch’s 50 g carbs from brown rice are being released slowly, so the modest rise velocity of 1.4 mg/dL/min is expected to keep you near today’s 165 mg/dL without a sharp spike. Take a 10-minute stroll now to nudge glucose downward and next time add chicken or tofu to blunt the peak further."
 }
 ```
 
