@@ -1,0 +1,7 @@
+# Ignore Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+.DS_Store
+.env
